@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 
 
 @Entity
-@Table(name= "postagens")
+@Table(name = "postagens")
 public class Postagem {
 	
 	@Id
@@ -30,7 +30,7 @@ public class Postagem {
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date data= new java.sql.Date(System.currentTimeMillis());
+	private Date data = new java.sql.Date(System.currentTimeMillis());
 
 	public long getId() {
 		return id;
