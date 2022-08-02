@@ -40,7 +40,7 @@ public class PostagemModel {
 	@JsonIgnoreProperties("postagem")
 	private TemaModel tema;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
