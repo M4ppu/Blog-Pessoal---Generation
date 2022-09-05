@@ -27,10 +27,10 @@ public class UsuarioRepositoryTest {
 	void start() {
 	
 	usuarioRepository.deleteAll();
-	usuarioRepository.save(new UsuarioModel(0L, "João da Silva", "joao@email.com.br", "13465278", "https://i.imgur.com/FETvs20.jpg"));
-	usuarioRepository.save(new UsuarioModel(0L, "Manuela da Silva", "manuela@email.com.br", "13465278", "https://i.imgur.com/NtyGneo.jpg"));
-	usuarioRepository.save(new UsuarioModel(0L, "Adriana da Silva", "adriana@email.com.br", "13465278", "https://i.imgur.com/mB3YM2N.jpg"));
-	usuarioRepository.save(new UsuarioModel(0L, "Paulo Antunes", "paulo@email.com.br", "13465278", "https://i.imgur.com/JR7kUFU.jpg"));
+	usuarioRepository.save(new UsuarioModel(0L, "João da Silva", "joao@email.com.br", "13465278", "https://i.imgur.com/FETvs20.jpg", " "));
+	usuarioRepository.save(new UsuarioModel(0L, "Manuela da Silva", "manuela@email.com.br", "13465278", "https://i.imgur.com/NtyGneo.jpg", " "));
+	usuarioRepository.save(new UsuarioModel(0L, "Adriana da Silva", "adriana@email.com.br", "13465278", "https://i.imgur.com/mB3YM2N.jpg", " "));
+	usuarioRepository.save(new UsuarioModel(0L, "Paulo Antunes", "paulo@email.com.br", "13465278", "https://i.imgur.com/JR7kUFU.jpg", " "));
 	}
 	
 	@Test
