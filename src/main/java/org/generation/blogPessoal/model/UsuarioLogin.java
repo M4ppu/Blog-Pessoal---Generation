@@ -4,6 +4,7 @@ public class UsuarioLogin {
 
 	private Long id;
 	private String nome;
+	private String sobrenome;
 	private String usuario;
 	private String senha;
 	private String foto;
@@ -51,5 +52,11 @@ public class UsuarioLogin {
 	}
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+	public String getSobrenome() {
+		return sobrenome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
 	}
 }

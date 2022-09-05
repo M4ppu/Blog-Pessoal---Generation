@@ -29,6 +29,9 @@ public class UsuarioModel {
 	@NotNull(message = "O Atributo Nome é Obrigatório!")
 	private String nome;
 	
+	@NotNull(message = "O Atributo Nome é Obrigatório!")
+	private String sobrenome;
+	
 	@Schema(example = "email@email.com.br")
 	@NotNull(message = "O Atributo Usuário é Obrigatório!")
 	@Email(message = "O Atributo Usuário deve ser um email válido!")
@@ -112,5 +115,13 @@ public class UsuarioModel {
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
 	}
 }
