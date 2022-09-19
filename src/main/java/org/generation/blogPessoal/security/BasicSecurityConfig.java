@@ -17,7 +17,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class BasicSecurityConfig {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
+		return new BCryptPasswordEncoder(); 
 	}
 	
 	@Bean
@@ -37,7 +37,7 @@ public class BasicSecurityConfig {
 			.authorizeHttpRequests((auth) -> auth
 			.antMatchers("/usuarios/logar").permitAll()
             .antMatchers("/usuarios/cadastrar").permitAll()
-            . antMatchers ( HttpMethod.GET ,"/usuarios/{id}" ).permitAll ()
+            .antMatchers (HttpMethod.GET ,"/usuarios/{id}").permitAll()
             .antMatchers(HttpMethod.OPTIONS).permitAll()
             .anyRequest().authenticated())
         .httpBasic();
